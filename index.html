@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Animate on Scroll Jesus</title>
 </head>
@@ -14,7 +16,7 @@
 <body>
     <header class="main-header">
         <h1><span>Acrylic Painting</span>Galery</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, incidunt maxime nulla reprehenderit sunt natus. Quia perferendis corrupti accusamus ut!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, facere.</p>
     </header>
 
     <main class="container">
@@ -23,30 +25,36 @@
             <div>
                 <h3>Image One</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reprehenderit.</p>
-                <a href="#" class="btn">Buy now</a>
+                <a href="#" class="btn">Read More</a>
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-left">
             <img src="img/img2.jpg" alt="">
             <div>
                 <h3>Image Two</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reprehenderit.</p>
-                <a href="#" class="btn">Buy now</a>
+                <a href="#" class="btn">Read More</a>
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" data-aos="fade-right">
             <img src="img/img3.jpg" alt="">
             <div>
                 <h3>Image Three</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reprehenderit.</p>
-                <a href="#" class="btn">Buy now</a>
+                <a href="#" class="btn">Read More</a>
             </div>
         </section>
     </main>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 800
+        });
+    </script>
+    
 </body>
-
 </html>
